@@ -7,7 +7,7 @@ myName = input()
 
 print("It's great to meet you " + myName)
 print('The length of your name is: ')
-print(len(myName)) # The len prints the string length
+print(len(myName), 'characters') # The len prints the string length
 print("What is your age? ")
 # ask for age 
 myAge = input()
