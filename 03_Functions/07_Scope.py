@@ -46,3 +46,19 @@ spam()
 # as you see above, the spam function calls bacon
 # but the eggs variable are local to each specific 
 # function body
+
+bird = 'Cardinal'
+
+def printBird():
+    print(bird)
+
+def printSecBird(): 
+    # print(bird)
+    global bird
+    bird = 'Blue Jay'
+    print(bird)
+
+printBird()
+printSecBird()
+# Cardinal
+# Blue Jay
