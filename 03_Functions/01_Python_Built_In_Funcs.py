@@ -9,18 +9,31 @@
 # STANDARD LIBRARY
 
 # Before you can use the functions in a module, you 
-# must first import them
+# must first import them, and you can import as many 
+# as needed by separating them with commas 
 
-import random 
+import sys, os, math
+
+# Alternatively, you can import things like:
+
+from random import *
+
 
 # For example importing random exposes various 
 # methods from the random module like the randint 
 # method which takes two int arguments and returns 
 # a random number between the two 
 
-random.randint(1, 10)
+# when using the import syntax: from random import *
+# random.randint is not necessary, this type of 
+# import directly exposes randint without the 
+# need to use dot notation to call it 
+
+# random.randint(1, 10)
 
 def printRand(): 
-    print(random.randint(1, 10))
+    print(randint(1, 10))
 
 printRand()
+
+print(randint(50, 60))
