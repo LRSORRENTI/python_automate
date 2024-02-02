@@ -28,3 +28,6 @@ in the console, but if you add:
 
 print('hello', end='')
 print(' world')
+
+# hello world is printed on a single line, next to 
+# the previous print call
