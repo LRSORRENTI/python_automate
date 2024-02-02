@@ -50,6 +50,8 @@ Install project-specific packages using pip while the virtual environment is act
 pip install pyperclip
 ```
 
+### Generating the requirements file:
+
 To ensure consistency across environments, generate a requirements.txt file by running:
 
 ```
