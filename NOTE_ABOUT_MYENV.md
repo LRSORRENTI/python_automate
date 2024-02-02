@@ -1,5 +1,17 @@
 # MYENV AND LOCAL ENVIRONMENTS
 
+## Don't forget to run activate to enable all local python dependencies in the requirements.txt file
+
+```
+source myenv/Scripts/activate
+```
+
+## And when finished run:
+
+```
+ deactivate
+```
+
 ## Introduction
 
 This project uses a Python virtual environment to manage dependencies, ensuring that our development and production setups are consistent and isolated from the global Python installation.
