@@ -88,3 +88,82 @@ print(shoppingList[1:3])
 # ['Sardines', 'Sauerkraut]
 print(shoppingList[3:6])
 # ['Vegetables', 'Lentils', 'Milk']
+
+# Changing values of list indexes:
+
+# Change any value by passing in the index:
+
+planets = ['Jupiter', 'Mars', 'Pluto', 'Neptune',
+           'Venus', 'Mercury', 'Uranus', 'Earth']
+planets[2] = 'Pluto is not a planet'
+
+print(planets)
+# ['Jupiter', 'Mars', 'Pluto is not a planet',
+# 'Neptune', 'Venus', 'Mercury', 'Uranus', 'Earth']
+
+earth = str(planets[7: 8][0])
+print(earth) # Earth
+
+# You can omit the first slice index start, and 
+# python will default start at index 0
+animals = ['Dog', 'Cat', 'Fish', 'Bird']
+print(animals[:2]) # ['Dog', 'Cat'] 
+
+# Above is effectively the same as: 
+print(animals[0:2]) # ['Dog', 'Cat']
+
+# Omitting the second value in slice will 
+# return everything in the list after the 
+# specified index: 
+
+print(animals[2:])
+# ['Fish', 'Bird']
+
+# Del keyword:
+# You can use the del keyword to delete an item 
+# in a list:
+
+names = ['Peter', 'John', 'Matthew', 'Judas']
+del names[-1]
+print(names)
+# ['Peter', 'John', 'Matthew']
+
+# len and lists: 
+print(len(names)) # 3 
+# the len method can also be used to quickly 
+# return the length of a list 
+
+# You can also quickly join lists by using '+'
+listOne = [1, 2, 3]
+listTwo = [4, 5, 6, 'seven']
+listThree = ['eight', 'nine', 'ten', True]
+joinedLists = listOne + listTwo + listThree
+print(joinedLists)
+# [1, 2, 3, 4, 5, 6, 'seven', 'eight', 'nine', 'ten', True]
+
+# the '*' can be used to repeat a list a given 
+# number of times: 
+
+boolies = [True, False, True, False]
+print(boolies * 2)
+# [True, False, True, False, True, False, True, False]
+
+# There is also the list function() which will take 
+# a value and turn it into a list 
+
+fish = 'Muskellunge'
+num = 2
+
+print(list(fish))
+print(list(str(num)))
+
+# ['M', 'u', 's', 'k', 'e', 'l', 'l', 'u', 'n', 'g', 'e']
+# ['2']
+
+# You can also use the 'in' and 'not in' operators 
+# to quickly see if a value exists in a list 
+
+birds = ['cardinal', 'robin', 'blue jay']
+print('cardinal' in birds) # True 
+print('Crow' not in birds) # True
+print('Raven' in birds) # False
