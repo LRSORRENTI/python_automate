@@ -20,8 +20,8 @@ myList = [1, 'one', True]
 # this accesses the item at the last index movin 
 # backwards: 
 
-print(myList[-1])
-print(myList[-2])
+print(myList[-1]) # True
+print(myList[-2]) # one
 
 
 '''
@@ -67,3 +67,24 @@ for row in matrix:
 # 7
 # 8
 # 9
+    
+dog = ['Rey', 10]
+
+# Can perform string concatentation or other 
+# data type methods on each list index:
+
+# print(dog[0] + ' is' +  [dog][1] + ' years old')
+# Above does not work without str conversion:
+print(dog[0] + ' is ' + str(dog[1]) + ' years old')
+# Rey is 10 years old
+
+
+# Slice: 
+# You can specify slice in python to return 
+# values between two indexes using the indexes 
+# separated by a ':' colon
+
+print(shoppingList[1:3])
+# ['Sardines', 'Sauerkraut]
+print(shoppingList[3:6])
+# ['Vegetables', 'Lentils', 'Milk']
