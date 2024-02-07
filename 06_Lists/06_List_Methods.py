@@ -46,3 +46,45 @@ print(friends)
 
 friends.remove('Matt')
 print(friends)
+
+# the sort() method: 
+
+numList = [2, 77, 1, 55, 37, 10, 9, 3, 88, 22, 99, 75]
+print(numList)
+# [2, 77, 1, 55, 37, 10, 9, 3, 88, 22, 99, 75]
+
+numList.sort()
+print(numList)
+# [1, 2, 3, 9, 10, 22, 37, 55, 75, 77, 88, 99]
+
+# .sort also sorts string lists ASCII-betically,
+# not alphabetically, but ASCII, which means 
+# uppercase strings come before lowercase 
+
+artists = ['Van Gogh', 'Rembrandt', 'Monet', '12',  'Frida Kahlo', 'Da Vinci']
+print(artists)
+# ['Van Gogh', 'Rembrandt', 'Monet', 'Frida Kahlo', 'Da Vinci']
+
+artists.sort()
+print(artists)
+# ['12', 'Da Vinci', 'Frida Kahlo', 'Monet', 'Rembrandt', 'Van Gogh']
+
+# You can also reverse sort by passing in a boolean:
+
+artists.sort(reverse=True)
+print(artists)
+# ['Van Gogh', 'Rembrandt', 'Monet', 'Frida Kahlo', 'Da Vinci', '12']
+
+# ASCII-BETICALLY:
+listings = ['small house', 'Small house', 'big house', 'BIG HOUSE', 'z', 'Z']
+print(listings)
+# ['small house', 'Small house', 'big house', 'BIG HOUSE', 'z', 'Z']    
+
+listings.sort()
+print(listings)
+# ['BIG HOUSE', 'Small house', 'Z', 'big house', 'small house', 'z'] 
+
+# But you can pass in a key to sort by true alphabetica
+
+listings.sort(key=str.lower)
+print(listings)
