@@ -88,3 +88,4 @@ print(listings)
 
 listings.sort(key=str.lower)
 print(listings)
+# ['BIG HOUSE', 'big house', 'Small house', 'small house', 'Z', 'z'] 
