@@ -47,26 +47,3 @@ for i in range(len(fishingSupplies)):
 # Index 3 in fishing supplies is Bait
 
 
-# Multiple Assignment in Python 
-
-# Python has a multiple assignment trick to quickly 
-# assign list values to variables:
-cats = ['Tabby', 'Scottish Fold', 'Bengal', 'Sphinx']
-
-# assign values from a list quickly with: 
-tabby, scottishFold, bengal, sphinx = cats 
-print(tabby, scottishFold, bengal, sphinx)
-# Tabby Scottish Fold Bengal Sphinx
-print(sphinx, tabby) 
-# Sphinx, Tabby
-
-# This multiple assignment method is often used 
-# to perform swap operations to swap variables quickly
-
-name, age, hobby = 'Pete', '22', 'Wakeboarding'
-print(name, age, hobby)
-# Pete 22 Wakeboarding
-
-# And you can quickly reassign like: 
-name, age = hobby, name
-print(name, age)

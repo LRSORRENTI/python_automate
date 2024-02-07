@@ -1,5 +1,8 @@
 # List methods 
 
+# List methods like append and insert can only 
+# be called on lists
+
 days = ['Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat', 'Sun']
 
 # All list items above have a method availble on them 
@@ -29,3 +32,17 @@ print(friends)
 friends.insert(-1 , 'Michael')
 print(friends)
 # ['John', 'Dave', 'Jacob', 'Chris', 'Dave', 'Michael', 'Samuel']
+
+# Also note, when calling the append method it does 
+# mutate the list for every instance after:
+
+friends.append('Kyle')
+friends.append('Beth')
+friends.insert(3, 'Matt')
+
+print(friends)
+
+# Lists also have a .remove() method, 
+
+friends.remove('Matt')
+print(friends)
