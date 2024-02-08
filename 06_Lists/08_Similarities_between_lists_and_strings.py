@@ -10,6 +10,7 @@ print(list(name))
 # using for loops, len, in and not in
 
 fruit = 'watermelon'
+print(fruit)
 print('water' in fruit)
 # True 
 print('banana' in fruit)
@@ -33,8 +34,8 @@ for letter in fruit:
 # state 
     
 # Strings can not be mutated, you can slice out 
-# values and save themselves, but it can't be 
-# directly reassign letters within a string
+# values and save those, but it can't be 
+# directly reassigned letters within that string
 
 wat = fruit[0: 3]
 print(wat)
@@ -46,6 +47,25 @@ print(wat)
 # AttributeError: 'str' object has no attribute 'append'
 
 watList = []
-watList.append(wat + 'ermelon')
-print(watList)
+watList.append(wat + 'ermelon!')
+print(watList[0])
+# watermelon!
 
+# When you assign a list to a variable it creates 
+# a REFERENCE
+
+nums =  [1, 2, 3, 6, 7]
+listOfNums = nums
+listOfNums[1] = 'Hello'
+print(listOfNums)
+print(nums)
+# Above you'll notice we only changed the listOfNums
+# index 1 to be hello yet both listOfNums and the 
+# original list nums both are: 
+
+# [1, 'Hello', 3, 6, 7]
+# [1, 'Hello', 3, 6, 7]
+
+# This is because of REFERENCE in python, which is 
+# why even though we only made the change to one 
+# of the lists, it's reflected in both lists 
