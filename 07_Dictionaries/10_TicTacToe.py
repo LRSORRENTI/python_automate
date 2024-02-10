@@ -14,4 +14,15 @@ theBoard = {
     'low-r': ' '
 }
 
-pprint.pprint(theBoard)
+# pprint.pprint(theBoard)
+
+def printBoard(board):
+    print(board['top-l'] + ' | ' + board['top-m'] + ' | ' + board['top-r'])
+    print('---------')
+    print(board['mid-l'] + ' | ' + board['mid-m'] + ' | ' + board['mid-r'])
+    print('---------')
+    print(board['low-l'] + ' | ' + board['low-m'] + ' | ' + board['low-r'])
+
+printBoard(theBoard)
+print(type(theBoard))
+# <class 'dict'>
