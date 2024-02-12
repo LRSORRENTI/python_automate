@@ -27,6 +27,4 @@ print(newStr)
 paragraph = """
     This is a multiline string and can span 
     multiple lines
-
-
 """
