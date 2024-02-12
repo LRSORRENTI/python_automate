@@ -2,8 +2,28 @@
 
 ### NOTE: myenv wasn't working with pyperclip, so it suggested .venv which is a virtual environment, which is also activated with
 
+To setup the .venv:
+
+```
+python3 -m venv .venv
+
+```
+
+Install the dependencies like pyperclip:
+
+```
+pip install pyperclip
+
+```
+
 ```
 source .venv/Scripts/activate
+```
+
+When finished run:
+
+```
+deactivate
 ```
 
 Not 100% sure why the below myenv/Scripts/activate stopped working
