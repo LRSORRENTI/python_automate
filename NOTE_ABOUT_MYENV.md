@@ -1,5 +1,13 @@
 # MYENV AND LOCAL ENVIRONMENTS
 
+### NOTE: myenv wasn't working with pyperclip, so it suggested .venv which is a virtual environment, which is also activated with
+
+```
+source .venv/Scripts/activate
+```
+
+Not 100% sure why the below myenv/Scripts/activate stopped working
+
 ## Don't forget to run activate to enable all local python dependencies in the requirements.txt file
 
 ```
