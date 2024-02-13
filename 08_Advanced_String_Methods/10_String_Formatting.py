@@ -13,3 +13,4 @@ print('Hello ' + name + " you're invited to a party at " \
 print("Hello %s, you're invited to a party at %s \
       at %s, we'll be eating %s" %(name, place, \
                                    time, food))
+# Hello Alice, you're invited to a party at Main St.       at 4pm, we'll be eating pasta
