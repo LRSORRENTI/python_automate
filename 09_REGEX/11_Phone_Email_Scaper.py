@@ -9,12 +9,13 @@ re.compile(r'''
 # 414-555-1234, 555-1234, (414) 555 1234, 
 # 555-100 ext 12345, ext. 12345, x12345
 
-# area code (optional)
-# first separator
-# first three digits
-# second separator
-# last four digits 
-# extension (optional)
+((\d\d\d) | (\(\d\d\d\)))?  # area code (optional)
+(\s|-)  # first separator
+\d\d\d  # first three digits
+-       # second separator
+\d\d\d\d       # last four digits 
+(((ext(\.)?\s)|x) # etx word part
+(\d{2,5}))? # extension number part(optional)
 
 ''', re.VERBOSE)
 
