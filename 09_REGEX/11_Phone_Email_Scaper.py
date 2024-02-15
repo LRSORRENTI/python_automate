@@ -5,7 +5,7 @@ import re, pyperclip
 # file 
 
 # 1. Create a REGEX for the phone numbers 
-re.compile(r'''
+phoneRegex = re.compile(r'''
 # 414-555-1234, 555-1234, (414) 555 1234, 
 # 555-100 ext 12345, ext. 12345, x12345
 
@@ -20,6 +20,20 @@ re.compile(r'''
 ''', re.VERBOSE)
 
 # 2. Create a REGEX for the email addresses
+emailRegex = re.compile(r'''
+# Emails can be more demanding, since before the @ 
+# emails can have '.,+_, and many other special chars
+
+ # name 
+# below is the range of characters we'll search for in 
+# the email
+[a-zA-Z0-9_.+]+
+@               # @ symbol 
+[a-zA-Z0-9_.+]+ # domain name part                                          
+                        
+
+''', re.VERBOSE)
+
 # 3. Use pyperclip to get the text off clipboard
 # 4. Extract email and password from the text 
 # 5. Copy the text to the clip board
