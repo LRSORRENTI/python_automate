@@ -8,14 +8,15 @@ import re, pyperclip
 phoneRegex = re.compile(r'''
 # 414-555-1234, 555-1234, (414) 555 1234, 
 # 555-100 ext 12345, ext. 12345, x12345
-
+(
 ((\d\d\d) | (\(\d\d\d\)))?  # area code (optional)
 (\s|-)  # first separator
 \d\d\d  # first three digits
 -       # second separator
 \d\d\d\d       # last four digits 
 (((ext(\.)?\s)|x) # etx word part
-(\d{2,5}))? # extension number part(optional)
+(\d{2,5}))? 
+)    # extension number part(optional)
 
 ''', re.VERBOSE)
 
@@ -35,5 +36,22 @@ emailRegex = re.compile(r'''
 ''', re.VERBOSE)
 
 # 3. Use pyperclip to get the text off clipboard
+text = pyperclip.paste()
+
 # 4. Extract email and password from the text 
+extractedPhone = phoneRegex.findall(text)
+extractedEmail = emailRegex.findall(text)
+
+allPhoneNumbers = []
+for phoneNumber in extractedPhone:
+    allPhoneNumbers.append(phoneNumber[0])
+
+# print(allPhoneNumbers)
+# ['435-270-1776', '957-844-5572', '345-325-5854']
+# print(extractedEmail)
+
 # 5. Copy the text to the clip board
+results = '\n'.join(allPhoneNumbers) + '\n' \
++ '\n'.join(extractedEmail)
+
+print(results)
