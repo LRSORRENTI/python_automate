@@ -41,7 +41,43 @@ myArr = []
 myArr.insert(0, content)
 print(myArr)
 # [['Hello there, \n', 'how are you?\n']]
-fileObj.close()
+# fileObj.close()
 
 # That's it for reading from files for now, let's go 
 # over how to modify and write to a file
+
+# There are two ways to do this, first append, this 
+# will just add more text or data to the file, it 
+# DOESN'T overwrite what's already there, pass in 
+# 'a' for append, as a second argument to open
+
+# hellofile = open('C:\\Users\\lrsor\\test.txt', 'a')
+
+# But passing in 'w', as an argument to open will 
+# overwrite the text data 
+hellofile = open('C:\\Users\\lrsor\\test2.txt', 'w')
+# then to write to the file, call the write method 
+
+for i in range(5):
+    hellofile.write('Tesing123456789\n')
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+
+
+
+hellofile.close()
+
+hellofile = open('C:\\Users\\lrsor\\test2.txt', 'a')
+hellofile.write('\n Appending this line to test2.txt from \n automate-python course')
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+# Tesing123456789
+
+#  Appending this line to test2.txt from 
+#  automate-python course
+hellofile.close()
