@@ -1,0 +1,8 @@
+Tesing123456789
+Tesing123456789
+Tesing123456789
+Tesing123456789
+Tesing123456789
+
+ Appending this line to test2.txt from 
+ automate-python course
