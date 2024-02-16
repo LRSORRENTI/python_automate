@@ -66,4 +66,7 @@ for filename in os.listdir('C:\\Users\\user1\\Desktop\CURRENT-PROJECTS\\automate
         continue
     totalSize = totalSize + os.path.getsize(os.path.join('C:\\Users\\lrsor\\Desktop\CURRENT-PROJECTS\\automate_python\\', filename))
     print(totalSize)
-                      
+
+# the make dirs method can also create directories 
+# with:               
+# os.makedirs('c:\\delcious\\walnut\\waffles')
