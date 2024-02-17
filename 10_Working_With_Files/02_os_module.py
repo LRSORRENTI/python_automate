@@ -17,7 +17,7 @@ print(testPath)
 
 print(os.getcwd())
 
-# C:\Users\user1\Desktop\CURRENT-PROJECTS\automate_python\11_Working_With_Files\
+# C:\Users\user1\Desktop\CURRENT-PROJECTS\automate_python\10_Working_With_Files\
 
 # You can also change current working directory with:
 
