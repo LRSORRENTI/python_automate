@@ -14,10 +14,3 @@ driver = webdriver.Firefox(options=options)
  # Navigate to url
 driver.get("https://www.selenium.dev/selenium/web/inputs.html")
 
-
-
-
-  
-
-# Click on the element )
-  
