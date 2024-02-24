@@ -13,3 +13,9 @@ def getText(filename):
     return '\n'.join(fullText)
 
 getText('./demo.docx')
+# Document Title
+# A plain paragraph having some bold and some italic.
+# Heading, level 1
+# Intense quote
+# first item in unordered list
+# first item in ordered list
