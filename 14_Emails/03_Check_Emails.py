@@ -33,12 +33,12 @@ UIDS = conn.search(['SINCE 20-Aug-2023'])
 # the second arg is which parts of the email we want
 rawMessage = conn.fetch([47416], ['BODY[]', 'FLAGS'])
 
-import pyzmail
+# import pyzmail
 
-message = pyzmail.PyzMessage.factory(rawMessage[47416][b'BODY[]'])
+# message = pyzmail.PyzMessage.factory(rawMessage[47416][b'BODY[]'])
 
-message.getSubject()
+# message.getSubject()
 # 'so long...' 
 
-message.get_addresses('from')
+# message.get_addresses('from')
 # [(Youremail@outlook.com, Youremail@outlook.com)]
