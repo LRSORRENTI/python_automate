@@ -1,6 +1,6 @@
 # Automate The Boring Stuff - Al Sweigart
 
-[Course][https://www.udemy.com/course/automate]
+[Course](https://www.udemy.com/course/automate)
 
 **If you're an office worker, student, administrator, or just want to become more productive with your computer, programming will allow you write code that can automate tedious tasks. This course follows the popular (and free!) book, Automate the Boring Stuff with Python.**
 
